@@ -52,5 +52,4 @@ function clickedCheck() {
 
  checkButton.onclick = clickedCheck;
 
-
 }
