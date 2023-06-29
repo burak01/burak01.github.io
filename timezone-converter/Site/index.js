@@ -41,7 +41,7 @@ function clickedCheck() {
 
    let selectedDateTime = new Date(dateInfo.value);
    if (isNaN(selectedDateTime) || selectedDateTime === null || selectedDateTime === undefined){
-      resultText.innerText = -offset>=0 ? `${fromButton.value.toUpperCase}+${plus1} is ahead of ${toButton.value.toUpperCase}+${plus2} by ${-offset} hour(s)` : `${fromButton.value.toUpperCase}+${plus1} is behind ${toButton.value.toUpperCase}+${plus2} by ${offset} hour(s)`
+      resultText.innerText = -offset>=0 ? `${fromButton.value.toString.toUpperCase}+${plus1} is ahead of ${toButton.value.toString.toUpperCase}+${plus2} by ${-offset} hour(s)` : `${fromButton.value.toString.toUpperCase}+${plus1} is behind ${toButton.value.toString.toUpperCase}+${plus2} by ${offset} hour(s)`
 
    }else{
       selectedDateTime.setHours(selectedDateTime.getHours() + offset);
