@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="Site/styles.css">  
+    <script src="Site/index.js"></script>
+
+</head>
+
+<body>
+    <div id="main">
+        <title>AR Calculator</title>
+        <h1 id="header">Genshin AR Calculator</h1>
+        <input id = "date" type="datetime-local">
+        
+        <br>
+        <br>
+        <div id="group">
+            <input id = "from" type="text" placeholder="GMT">
+            <span id="plus">+</span>
+            <input id = "num1" type="number" placeholder="0">
+        </div>
+        
+        <span id="toText">to</span>
+        <div>
+            <input id = "to" type="text" placeholder="EST">
+            <span id="plus">+</span>
+            <input id = "num2" type = "number" placeholder="0">
+        </div>
+        <button id = "check" onclick="clickedCheck()">Check Time</button>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>
