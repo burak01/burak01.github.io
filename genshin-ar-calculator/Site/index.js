@@ -19,13 +19,13 @@ const data = [
  ];
 
 function clickedCheck() {
-   var currentArValue = parseInt(currentAr.value)||0;
-   var desiredArValue = parseInt(desiredAr.value)||0;
+   var currentArValue = parseInt(currentAr.value)-1||0;
+   var desiredArValue = parseInt(desiredAr.value)-1||0;
    var currentXpValue = parseInt(currentXp.value)||0;
    var desiredXpValue = parseInt(desiredXp.value)||0;
    var dailyXpValue = parseInt(dailyXp.value)||0;
 
-   if (currentArValue <= 0 || desiredArValue <= 0 || data[currentArValue] + currentXpValue > data[desiredArValue] + desiredXpValue || currentArValue > 60 || desiredArValue >= 60) {
+   if (currentArValue < 0 || desiredArValue < 0 || data[currentArValue] + currentXpValue > data[desiredArValue] + desiredXpValue || currentArValue >= 59 || desiredArValue >= 60) {
       resultText.innerHTML = "Please enter valid arguments";
     } else {
       var result = Math.ceil(((data[desiredArValue] + desiredXpValue) - (data[currentArValue] + currentXpValue)) / dailyXpValue);
