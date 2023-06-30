@@ -25,7 +25,7 @@ function clickedCheck() {
    var desiredXpValue = parseInt(desiredXp.value)||0;
    var dailyXpValue = parseInt(dailyXp.value)||0;
 
-   if (currentArValue <= 0 || desiredArValue <= 0 || data[currentArValue] + currentXpValue > data[desiredArValue] + desiredXpValue || currentArValue >= 60 || desiredArValue > 60) {
+   if (currentArValue <= 0 || desiredArValue <= 0 || data[currentArValue] + currentXpValue > data[desiredArValue] + desiredXpValue || currentArValue > 60 || desiredArValue >= 60) {
       resultText.innerHTML = "Please enter valid arguments";
     } else {
       var result = Math.ceil(((data[desiredArValue] + desiredXpValue) - (data[currentArValue] + currentXpValue)) / dailyXpValue);
