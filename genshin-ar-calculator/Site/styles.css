@@ -5,34 +5,27 @@
     color: rgb(55, 146, 115);
 }
 
-#date {
+.ar {
     font-size: 30px;
+    width: 100px;
+}
+.xp {
+    font-size: 30px;
+    width: 120px;
+}
+span {
+    font-size: 34px;
 }
 #from {
     font-size: 25px;
     width: 180px;
 }
-#num1 {
-    font-size: 25px;
-    width: 60px;
-}
-#toText{
-    display: block;
+#daily {
     font-size: 30px;
-    margin-top: 10px;
-    padding-bottom: 10px;
+    width: 200px;
+    margin-right: 20px;
 }
-#to {
-    font-size: 25px;
-    width: 180px;
-}
-#plus{
-    font-size:20px;
-}
-#num2 {
-    font-size: 25px;
-    width: 60px;
-}
+
 #group{
     padding-top: 6px;
 }
