@@ -1,0 +1,23 @@
+a{
+    font-size: 30px;
+    color: rgb(0, 157, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 217, 255);
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 400px;
+
+    
+}
+
+/*
+<!-- flex: 0 0 200px; -->
+padding: 10px;
+border: 1px solid black; 
+*/
