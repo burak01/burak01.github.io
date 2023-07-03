@@ -27,7 +27,8 @@ const timeZones = new Map([
    ["cdt", -5],
    ["est", -5],
    ["edt", -4],
-   ["et", offsetET]
+   ["et", offsetET],
+   ["cest", 2]
 
 ]);
 
